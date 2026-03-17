@@ -13,6 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate required secrets
+        run: |
+          if [ -z "${{ secrets.ORIGIN_HOST }}" ]; then echo "Missing ORIGIN_HOST"; exit 1; fi
+          if [ -z "${{ secrets.ORIGIN_USER }}" ]; then echo "Missing ORIGIN_USER"; exit 1; fi
+          if [ -z "${{ secrets.ORIGIN_SSH_KEY }}" ]; then echo "Missing ORIGIN_SSH_KEY"; exit 1; fi
+          if [ -z "${{ secrets.ORIGIN_SSH_PORT }}" ]; then echo "Missing ORIGIN_SSH_PORT"; exit 1; fi
+
       - name: Deploy to origin server via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:

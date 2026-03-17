@@ -91,3 +91,10 @@ In Cloudflare for your domain:
 
 ## Important Note
 Cloudflare Pages is for static/Jamstack style; this Flask app should use origin deployment + Cloudflare proxy.
+
+## If you do not have an origin server yet
+You currently cannot complete dynamic Flask deployment.
+
+Temporary alternatives:
+1. Create an origin VPS first, then use this guide as-is.
+2. Or publish a static-only marketing version with Cloudflare Pages (no Flask backend features like `/contact` processing).
