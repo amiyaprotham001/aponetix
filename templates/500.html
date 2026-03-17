@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Server error | APONETIX" />
+    <title>500 | APONETIX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <main class="section">
+        <div class="container legal-wrap card">
+            <p class="eyebrow">ERROR</p>
+            <h1>500 — Server Error</h1>
+            <p>Something went wrong on our side. Please try again shortly.</p>
+            <div class="hero-actions">
+                <a class="btn" href="{{ url_for('home') }}">Back to Homepage</a>
+                <a class="btn btn-ghost" href="mailto:support@aponetix.tech">Contact Support</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

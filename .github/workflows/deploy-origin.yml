@@ -1,0 +1,30 @@
+name: Deploy APONETIX to Origin
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to origin server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.ORIGIN_HOST }}
+          username: ${{ secrets.ORIGIN_USER }}
+          key: ${{ secrets.ORIGIN_SSH_KEY }}
+          port: ${{ secrets.ORIGIN_SSH_PORT }}
+          script: |
+            set -e
+            cd /opt/aponetix
+            git fetch --all
+            git reset --hard origin/main
+            /opt/aponetix/.venv/bin/pip install -r requirements.txt
+            sudo systemctl restart aponetix
+            sudo systemctl status aponetix --no-pager --lines=20
