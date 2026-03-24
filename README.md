@@ -6,7 +6,7 @@ International-style professional brand website for APONETIX, built with Flask an
 - Brand Name: APONETIX
 - Type: Technology and digital engineering brand website
 - Unofficial Launch Date: January 12, 2026
-- Official Emails: info@aponetix.tech, support@aponetix.tech
+- Official Emails: ceo@aponetix.com, info@aponetix.com, support@aponetix.tech
 
 ## Included Pages
 - `/` — Homepage

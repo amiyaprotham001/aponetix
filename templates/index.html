@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="APONETIX is a modern technology brand delivering product engineering, web systems, and digital transformation services." />
-    <meta name="theme-color" content="#070a10" />
-    <meta property="og:title" content="APONETIX | Modern Technology Brand" />
-    <meta property="og:description" content="Hyper-modern technology brand focused on product engineering, scalable systems, and logical digital execution." />
+    <meta name="description" content="APONETIX is an independent, founder-led technology company delivering affordable innovation with premium digital experiences for Bangladesh and international clients." />
+    <meta name="keywords" content="APONETIX, web development Bangladesh, product engineering, modern UI UX, software company, AmiKey AI" />
+    <meta name="author" content="APONETIX" />
+    <meta name="theme-color" content="#060b16" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:title" content="APONETIX | Product Engineering Company" />
+    <meta property="og:description" content="Affordable innovation with premium experiences through modern web development, UI/UX design, and product engineering." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="{{ url_for('static', filename='images/aponetix-logo.png') }}" />
+    <meta property="og:url" content="{{ url_for('home', _external=True) }}" />
+    <meta property="og:image" content="{{ url_for('static', filename='images/aponetix-logo.png', _external=True) }}" />
     <meta property="og:site_name" content="APONETIX" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="APONETIX | Modern Technology Brand" />
-    <meta name="twitter:description" content="Global-ready product engineering, web systems, and digital growth execution." />
-    <meta name="twitter:image" content="{{ url_for('static', filename='images/aponetix-logo.png') }}" />
-    <title>APONETIX | Modern Technology Brand</title>
+    <meta name="twitter:title" content="APONETIX | Product Engineering Company" />
+    <meta name="twitter:description" content="Independent founder-led technology company building premium digital systems at accessible cost." />
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/aponetix-logo.png', _external=True) }}" />
+    <title>APONETIX | Affordable Innovation, Premium Experience</title>
+    <link rel="canonical" href="{{ url_for('home', _external=True) }}" />
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/aponetix-logo.png') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
     <a class="skip-link" href="#top">Skip to main content</a>
-    <div class="bg-orb orb-one" aria-hidden="true"></div>
-    <div class="bg-orb orb-two" aria-hidden="true"></div>
 
     <header class="navbar">
         <div class="container nav-content">
-            <a class="brand" href="#top">
-                <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="APONETIX Logo" />
+            <a class="brand" href="#top" aria-label="APONETIX Home">
+                <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="APONETIX logo" />
                 <span>APONETIX</span>
             </a>
             <nav aria-label="Primary">
-                <a href="#product">AmiKey AI</a>
                 <a href="#services">Services</a>
-                <a href="#standards">Standards</a>
+                <a href="#product">AmiKey AI</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#leadership">Leadership</a>
                 <a href="#process">Process</a>
-                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a class="btn btn-small" href="#contact">Start Now</a>
             </nav>
         </div>
     </header>
@@ -44,215 +46,208 @@
     <main id="top">
         <section class="hero section">
             <div class="container hero-grid">
-                <div>
-                    <p class="eyebrow">UNOFFICIAL LAUNCH • JANUARY 12, 2026</p>
-                    <h1>International-Standard Digital Engineering for Ambitious Brands</h1>
-                    <p class="lead">
-                        APONETIX builds high-performance products, web systems, and growth-ready digital experiences
-                        with a globally aligned delivery model, clear communication, and measurable business outcomes.
-                    </p>
+                <div class="hero-copy">
+                    <p class="eyebrow">ESTABLISHED VISION • JANUARY 12, 2026</p>
+                    <h1>Affordable Innovation, Premium Experience</h1>
+                    <p class="lead">APONETIX is an independent, founder-led technology company building modern websites, UI/UX systems, and scalable digital products for businesses in Bangladesh and international markets.</p>
                     <div class="hero-actions">
-                        <a class="btn" href="#contact">Book a Strategy Call</a>
-                        <a class="btn btn-ghost" href="#services">View Capabilities</a>
+                        <a class="btn" href="#contact">Get a Proposal</a>
+                        <a class="btn btn-ghost" href="#services">See Capabilities</a>
                     </div>
-                    <div class="chip-row">
-                        <span>Product Engineering</span>
-                        <span>Cloud-Ready Systems</span>
-                        <span>High-Performance UI</span>
-                    </div>
-                    <div class="hero-metrics">
-                        <div class="metric">
-                            <h3>Global Delivery</h3>
-                            <p>Remote-ready collaboration for Bangladesh and international clients.</p>
-                        </div>
-                        <div class="metric">
-                            <h3>Business Outcomes</h3>
-                            <p>Every engagement is scoped to speed, quality, and growth impact.</p>
-                        </div>
-                    </div>
+                    <ul class="hero-list">
+                        <li>Original design direction (no template-copy execution)</li>
+                        <li>Secure and performance-focused development lifecycle</li>
+                        <li>Business goals mapped to measurable product outcomes</li>
+                    </ul>
                 </div>
 
-                <aside class="card panel-highlight">
-                    <h2>Brand Snapshot</h2>
+                <aside class="card hero-panel">
+                    <h2>APONETIX at a Glance</h2>
                     <ul>
-                        <li><strong>Brand:</strong> APONETIX</li>
-                        <li><strong>Category:</strong> Technology & Product Engineering</li>
-                        <li><strong>Founded:</strong> Unofficially on January 12, 2026</li>
-                        <li><strong>Coverage:</strong> Bangladesh + International Clients</li>
-                        <li><strong>Vision:</strong> Become a globally trusted innovation brand</li>
+                        <li><strong>Company Type:</strong> Technology & Product Engineering</li>
+                        <li><strong>Operating Region:</strong> Bangladesh + International</li>
+                        <li><strong>Location:</strong> Bangladesh (Remote-First)</li>
+                        <li><strong>Core Priority:</strong> Modern UI/UX + Secure Architecture</li>
+                        <li><strong>Support Channel:</strong> info@aponetix.com • support@aponetix.tech</li>
                     </ul>
+                    <div class="trust-line">
+                        <span>Design Quality</span>
+                        <span>Engineering Discipline</span>
+                        <span>Client Clarity</span>
+                    </div>
                 </aside>
             </div>
         </section>
 
-        <section class="trust-strip" aria-label="Brand Strength Highlights">
-            <div class="container trust-grid">
-                <p>Modern Architecture</p>
-                <p>Execution Excellence</p>
-                <p>Security Mindset</p>
-                <p>Long-Term Scalability</p>
+        <section class="section section-alt trust-strip" aria-label="Brand trust signals">
+            <div class="container trust-items">
+                <p>Modern UI/UX</p>
+                <p>Clean Code Standard</p>
+                <p>Scalable Infrastructure</p>
+                <p>Outcome-Focused Delivery</p>
             </div>
         </section>
 
-        <section id="standards" class="section section-alt">
+        <section id="services" class="section">
             <div class="container">
                 <div class="section-head">
-                    <p class="eyebrow">INTERNATIONAL STANDARDS</p>
-                    <h2>Built with Global Professional Expectations</h2>
+                    <p class="eyebrow">SERVICES</p>
+                    <h2>Complete Execution for Company Growth</h2>
+                    <p>From strategy to launch, every project is built around brand quality, user behavior, and conversion-ready architecture.</p>
                 </div>
                 <div class="grid-3">
-                    <article class="card">
-                        <h3>Transparent Communication</h3>
-                        <p>Clear scope, milestone-based delivery, and decision logs for predictable execution.</p>
+                    <article class="card service-card">
+                        <h3>Web Experience Engineering</h3>
+                        <p>Corporate websites and product platforms with high speed, premium interface structure, and responsive behavior.</p>
+                        <ul>
+                            <li>Business websites and landing systems</li>
+                            <li>Responsive UI/UX architecture</li>
+                            <li>Performance and technical SEO baseline</li>
+                        </ul>
                     </article>
-                    <article class="card">
-                        <h3>Security-Conscious Approach</h3>
-                        <p>Privacy-aware implementation and responsible handling practices across product workflows.</p>
+                    <article class="card service-card">
+                        <h3>Product & SaaS Development</h3>
+                        <p>Design-to-delivery product pipelines for startups and business teams that need scalable, maintainable systems.</p>
+                        <ul>
+                            <li>Product planning and feature scoping</li>
+                            <li>Secure backend and integration-ready APIs</li>
+                            <li>Iterative release and optimization cycle</li>
+                        </ul>
                     </article>
-                    <article class="card">
-                        <h3>Quality and Performance</h3>
-                        <p>Modern architecture principles, maintainable code, and performance-focused delivery standards.</p>
+                    <article class="card service-card">
+                        <h3>Digital Transformation Advisory</h3>
+                        <p>Strategic technical support for modernization, workflow improvement, and long-term digital capability building.</p>
+                        <ul>
+                            <li>Architecture review and roadmap design</li>
+                            <li>Process improvement recommendations</li>
+                            <li>Technology stack decision support</li>
+                        </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="product" class="section">
+        <section id="product" class="section section-alt">
             <div class="container product-grid">
                 <div>
                     <div class="section-head">
                         <p class="eyebrow">FLAGSHIP PRODUCT</p>
                         <h2>AmiKey AI</h2>
                     </div>
-                    <p class="lead">
-                        AmiKey AI is APONETIX's flagship smart keyboard concept designed for faster writing,
-                        cleaner communication, and multilingual productivity across Bangla and English.
-                    </p>
-                    <div class="chip-row">
-                        <span>Smart Keyboard Experience</span>
-                        <span>Bangla + English Support</span>
-                        <span>Productivity-first Workflow</span>
+                    <p class="lead">AmiKey AI is APONETIX’s productivity-focused keyboard concept designed to improve typing, message drafting, translation workflows, and multilingual communication efficiency.</p>
+                    <div class="chip-row" aria-label="AmiKey AI key themes">
+                        <span>Bangla + English Workflow</span>
+                        <span>Smart Writing Support</span>
+                        <span>Real-Time Productivity</span>
                     </div>
                 </div>
-                <article class="card product-panel">
-                    <h3>Public Feature Highlights</h3>
+                <article class="card">
+                    <h3>Product Value Direction</h3>
                     <ul class="feature-points">
-                        <li>Context-aware translation assistance</li>
-                        <li>Spelling and grammar refinement support</li>
-                        <li>Formal and informal writing assistance</li>
-                        <li>Smart reply and drafting support</li>
-                        <li>Voice-to-text workflow support</li>
+                        <li>Translation and language assist for everyday communication</li>
+                        <li>Fast reply generation for social and business use cases</li>
+                        <li>Personal productivity layer for mobile-first users</li>
                     </ul>
-                    <p class="product-note">Built for communication speed, writing clarity, and modern mobile-first usage.</p>
                 </article>
             </div>
         </section>
 
-        <section id="services" class="section section-alt">
+        <section id="portfolio" class="section">
             <div class="container">
                 <div class="section-head">
-                    <p class="eyebrow">WHAT WE DELIVER</p>
-                    <h2>Core Service Portfolio</h2>
+                    <p class="eyebrow">PORTFOLIO</p>
+                    <h2>Case Studies & Client Outcomes</h2>
+                    <p>Verified project showcases and testimonial highlights are being curated for public release. High-quality case studies will be published soon.</p>
                 </div>
-                <div class="grid-3">
-                    <article class="card">
-                        <h3>Web Platforms</h3>
-                        <p>Enterprise-grade websites and web applications engineered for speed, trust, and conversion.</p>
-                        <ul class="feature-points">
-                            <li>Responsive and conversion-focused UX</li>
-                            <li>Fast loading and SEO-friendly structure</li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <h3>Digital Products</h3>
-                        <p>End-to-end product execution from validation to launch, with practical growth readiness.</p>
-                        <ul class="feature-points">
-                            <li>Roadmap-led delivery and sprint execution</li>
-                            <li>End-to-end product lifecycle support</li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <h3>Tech Advisory</h3>
-                        <p>Strategic advisory for architecture, modernization, and cross-market digital scaling.</p>
-                        <ul class="feature-points">
-                            <li>Architecture audits and modernization plans</li>
-                            <li>Business-aligned technology decisions</li>
-                        </ul>
-                    </article>
-                </div>
+                <article class="card coming-soon-card">
+                    <h3>Coming Soon</h3>
+                    <p>Real project snapshots, measurable impact stories, and client trust signals are currently in final preparation.</p>
+                </article>
             </div>
         </section>
 
-        <section id="process" class="section">
+        <section id="leadership" class="section">
+            <div class="container leadership-grid">
+                <div>
+                    <div class="section-head">
+                        <p class="eyebrow">LEADERSHIP</p>
+                        <h2>Founder & CEO Information</h2>
+                    </div>
+                    <p>APONETIX is led by an owner-operator founder focused on accessible innovation, premium quality, and long-term product credibility.</p>
+                </div>
+                <article class="card leader-card">
+                    <img class="founder-photo" src="{{ url_for('static', filename='images/founder-image.jpg') }}" alt="Syed Amiya Protham Omi, Founder and CEO of APONETIX" />
+                    <p class="role">Founder & CEO</p>
+                    <h3>Syed Amiya Protham Omi</h3>
+                    <p>Founder of APONETIX, leading company strategy, product direction, and delivery excellence across web engineering, UI/UX, and digital innovation.</p>
+                    <p><a href="mailto:ceo@aponetix.com">ceo@aponetix.com</a></p>
+                    <a href="https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">View Official LinkedIn</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="process" class="section section-alt">
             <div class="container">
                 <div class="section-head">
-                    <p class="eyebrow">HOW WE WORK</p>
-                    <h2>Logical Delivery Process</h2>
+                    <p class="eyebrow">DELIVERY PROCESS</p>
+                    <h2>Clear, Structured, and Reliable</h2>
                 </div>
                 <div class="timeline-grid">
                     <article class="card step-card">
                         <span>01</span>
                         <h3>Discover</h3>
-                        <p>Analyze business goals, user context, and technical constraints.</p>
+                        <p>Understand goals, brand voice, audience, and measurable project KPIs.</p>
                     </article>
                     <article class="card step-card">
                         <span>02</span>
                         <h3>Design</h3>
-                        <p>Plan architecture, user flow, and interface strategy before development.</p>
+                        <p>Create modern UX flows and interface structure aligned with conversion.</p>
                     </article>
                     <article class="card step-card">
                         <span>03</span>
                         <h3>Develop</h3>
-                        <p>Build secure, scalable systems with quality-first engineering standards.</p>
+                        <p>Implement secure, scalable, and maintainable systems with clean code.</p>
                     </article>
                     <article class="card step-card">
                         <span>04</span>
                         <h3>Optimize</h3>
-                        <p>Measure, refine, and improve continuously for long-term business value.</p>
+                        <p>Improve speed, quality, and user outcomes through iterative refinement.</p>
                     </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section section-alt">
-            <div class="container about-grid">
-                <div>
-                    <div class="section-head">
-                        <p class="eyebrow">ABOUT APONETIX</p>
-                        <h2>Built for Precision, Innovation, and Trust</h2>
-                    </div>
-                    <p>
-                        APONETIX operates with a long-term mindset: premium delivery quality, responsible technology,
-                        and commercially practical execution. From Bangladesh to global markets, we focus on work that
-                        creates durable value instead of short-term noise.
-                    </p>
-                </div>
-                <div class="card founder-card">
-                    <h3>Founder</h3>
-                    <p>Syed Amiya Protham Omi</p>
-                    <a href="https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div class="container cta-wrap">
-                <p class="eyebrow">LET'S CONNECT</p>
-                <h2>Start Building with APONETIX</h2>
-                <p>Reach us for product collaboration, platform delivery, or strategic advisory with an international execution standard.</p>
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                <div class="flash-stack" aria-live="polite">
-                    {% for category, message in messages %}
-                    <p class="flash-message {{ category }}">{{ message }}</p>
-                    {% endfor %}
+            <div class="container contact-shell">
+                <div class="contact-copy">
+                    <p class="eyebrow">CONTACT APONETIX</p>
+                    <h2>Start a Professional Project Discussion</h2>
+                    <p>Share your requirement, budget range, and timeline. Our team responds with practical next steps and a clear implementation path.</p>
+                    <p class="contact-note">Expected first response: within 24 business hours.</p>
+                    <div class="email-links">
+                        <a class="btn" href="mailto:info@aponetix.com">info@aponetix.com</a>
+                        <a class="btn btn-ghost" href="mailto:support@aponetix.tech">support@aponetix.tech</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1DhnFeVCRG/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://youtube.com/@aponetix?si=vF3TDBqu7z-UJOH9" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Founder & CEO LinkedIn</a>
+                    </div>
                 </div>
-                {% endif %}
-                {% endwith %}
-                <form class="contact-form" action="{{ url_for('contact') }}" method="post">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-                    <input type="text" name="website" class="hidden-field" tabindex="-1" autocomplete="off" />
-                    <div class="form-grid">
+
+                <div class="card form-panel">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                    <div class="flash-stack" aria-live="polite">
+                        {% for category, message in messages %}
+                        <p class="flash-message {{ category }}">{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                    <form class="contact-form" action="{{ url_for('contact') }}" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                        <input type="text" name="website" class="hidden-field" tabindex="-1" autocomplete="off" />
                         <label>
                             <span>Name</span>
                             <input type="text" name="name" placeholder="Your full name" autocomplete="name" minlength="2" maxlength="120" required />
@@ -261,21 +256,12 @@
                             <span>Email</span>
                             <input type="email" name="email" placeholder="you@company.com" autocomplete="email" maxlength="254" required />
                         </label>
-                    </div>
-                    <label>
-                        <span>Project Message</span>
-                        <textarea name="message" rows="4" placeholder="Tell us about your project goals and timeline" minlength="10" maxlength="3000" required></textarea>
-                    </label>
-                    <button class="btn" type="submit">Submit Inquiry</button>
-                </form>
-                <div class="email-links">
-                    <a class="btn" href="mailto:info@aponetix.tech">info@aponetix.tech</a>
-                    <a class="btn btn-ghost" href="mailto:support@aponetix.tech">support@aponetix.tech</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/share/1DhnFeVCRG/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://youtube.com/@aponetix?si=vF3TDBqu7z-UJOH9" target="_blank" rel="noopener noreferrer">YouTube</a>
-                    <a href="https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Founder LinkedIn</a>
+                        <label>
+                            <span>Project Message</span>
+                            <textarea name="message" rows="5" placeholder="Tell us what you want to build" minlength="10" maxlength="3000" required></textarea>
+                        </label>
+                        <button class="btn" type="submit">Submit Inquiry</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -285,32 +271,56 @@
         <div class="container footer-content">
             <div>
                 <p>© 2026 APONETIX. All rights reserved.</p>
-                <p>Unofficial launch date: January 12, 2026 • Serving Bangladesh and global clients</p>
+                <p>Independent founder-led startup focused on affordable innovation and premium digital experiences.</p>
             </div>
             <div class="footer-links">
-                <a href="mailto:info@aponetix.tech">info@aponetix.tech</a>
-                <a href="mailto:support@aponetix.tech">support@aponetix.tech</a>
-                <a href="https://www.facebook.com/share/1DhnFeVCRG/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://youtube.com/@aponetix?si=vF3TDBqu7z-UJOH9" target="_blank" rel="noopener noreferrer">YouTube</a>
                 <a href="{{ url_for('privacy') }}">Privacy</a>
                 <a href="{{ url_for('terms') }}">Terms</a>
+                <a href="mailto:info@aponetix.com">info@aponetix.com</a>
+                <a href="mailto:support@aponetix.tech">support@aponetix.tech</a>
             </div>
         </div>
     </footer>
-        <script nonce="{{ csp_nonce() }}" type="application/ld+json">
+
+    <script nonce="{{ csp_nonce() }}" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "APONETIX",
-            "url": "https://aponetix.tech",
-            "logo": "{{ url_for('static', filename='images/aponetix-logo.png') }}",
-            "email": ["info@aponetix.tech", "support@aponetix.tech"],
-            "sameAs": [
-                "https://www.facebook.com/share/1DhnFeVCRG/",
-                "https://youtube.com/@aponetix?si=vF3TDBqu7z-UJOH9",
-                "https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            ]
+          "@type": "Organization",
+          "@id": "{{ url_for('home', _external=True) }}#organization",
+          "name": "APONETIX",
+          "url": "{{ url_for('home', _external=True) }}",
+          "logo": "{{ url_for('static', filename='images/aponetix-logo.png', _external=True) }}",
+                      "email": ["ceo@aponetix.com", "info@aponetix.com", "support@aponetix.tech"],
+          "sameAs": [
+            "https://www.facebook.com/share/1DhnFeVCRG/",
+            "https://youtube.com/@aponetix?si=vF3TDBqu7z-UJOH9",
+            "https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ],
+                    "areaServed": ["Bangladesh", "International"],
+                    "description": "Independent founder-led technology company delivering affordable innovation with premium experiences.",
+          "founder": {
+            "@type": "Person",
+                        "name": "Syed Amiya Protham Omi",
+                        "jobTitle": "Founder & CEO",
+                        "image": "{{ url_for('static', filename='images/founder-image.jpg', _external=True) }}",
+                        "sameAs": [
+                            "https://www.linkedin.com/in/syed-amiya-protham-omi-0946673b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "{{ url_for('home', _external=True) }}#website",
+          "url": "{{ url_for('home', _external=True) }}",
+          "name": "APONETIX",
+          "publisher": {
+            "@id": "{{ url_for('home', _external=True) }}#organization"
+          }
         }
-        </script>
+      ]
+    }
+    </script>
 </body>
 </html>

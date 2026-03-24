@@ -350,6 +350,7 @@ def ready():
 @app.route("/.well-known/security.txt")
 def security_txt():
     content = (
+        "Contact: mailto:ceo@aponetix.com\n"
         "Contact: mailto:support@aponetix.tech\n"
         "Policy: /privacy\n"
         "Preferred-Languages: en\n"
