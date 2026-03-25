@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: aponetix
+    env: python
+    region: oregon
+    plan: starter
+    
+    # Build configuration
+    buildCommand: pip install -r requirements.txt
+    
+    # Start command (Render uses PORT environment variable)
+    startCommand: python run.py
+    
+    # Domain configuration
+    domains:
+      - aponetix.onrender.com
+    
+    # Environment variables (These will be used as defaults)
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: APP_ENV
+        value: production
+      - key: SESSION_COOKIE_SECURE
+        value: "1"
+      - key: TRUST_PROXY
+        value: "1"
+      # Add these in Render dashboard for security:
+      # FLASK_SECRET_KEY (generate a strong key)
+      # SITE_URL (set to your domain)
+      # ALLOWED_HOSTS (set to your domain)
+    
+    # Database persistence (for SQLite contact_submissions.db)
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

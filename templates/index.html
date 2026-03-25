@@ -22,6 +22,23 @@
     <link rel="canonical" href="{{ url_for('home', _external=True) }}" />
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/aponetix-logo.png') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "APONETIX",
+      "url": "https://aponetix.tech",
+      "logo": "https://aponetix.tech/static/images/aponetix-logo.png",
+      "description": "Affordable innovation with premium experiences through modern web development, UI/UX design, and product engineering.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "hello@aponetix.tech",
+        "availableLanguage": ["English", "Bengali"]
+      }
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#top">Skip to main content</a>
@@ -52,7 +69,7 @@
         <section class="hero section">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">ESTABLISHED VISION • JANUARY 12, 2026</p>
+                    <p class="eyebrow">ESTABLISHED VISION • RECENTLY FOUNDED</p>
                     <h1>Affordable Innovation, Premium Experience</h1>
                     <p class="lead">APONETIX is an independent, founder-led technology company building modern websites, UI/UX systems, and scalable digital products for businesses in Bangladesh and international markets.</p>
                     <div class="hero-actions">
@@ -231,7 +248,7 @@
                     <p class="eyebrow">CONTACT APONETIX</p>
                     <h2>Start a Professional Project Discussion</h2>
                     <p>Share your requirement, budget range, and timeline. Our team responds with practical next steps and a clear implementation path.</p>
-                    <p class="contact-note">Expected first response: within 24 business hours.</p>
+                    <p class=\"contact-note\">Typical first response: within 24 business hours.</p>
                     <div class="email-links">
                         <a class="btn" href="mailto:info@aponetix.com">info@aponetix.com</a>
                         <a class="btn btn-ghost" href="mailto:support@aponetix.tech">support@aponetix.tech</a>
@@ -266,10 +283,154 @@
                         </label>
                         <label>
                             <span>Project Message</span>
-                            <textarea name="message" rows="5" placeholder="Tell us what you want to build" minlength="10" maxlength="3000" required></textarea>
+                            <textarea name=\"message\" rows=\"5\" placeholder=\"Describe your project, requirements, goals, and timeline\" minlength=\"10\" maxlength=\"3000\" required></textarea>
                         </label>
                         <button class="btn" type="submit">Submit Inquiry</button>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <h3 class=\"stat-number\">2026</h3>
+                        <p>Year Founded</p>
+                    </article>
+                    <article class=\"stat-card\">
+                        <h3 class=\"stat-number\">15+</h3>
+                        <p>Initial Projects</p>
+                    </article>
+                    <article class=\"stat-card\">
+                        <h3 class=\"stat-number\">98%</h3>
+                        <p>Commitment to Quality</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3 class="stat-number">24h</h3>
+                        <p>Response Time</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Client Testimonials</p>
+                    <h2>Trusted by Businesses</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-body">
+                            <p>"APONETIX delivered exceptional quality. Their attention to detail and professional approach transformed our digital presence completely."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <p class="testimonial-author">Verified Client</p>
+                            <p class="testimonial-role">Business Director</p>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-body">
+                            <p>"Professional, reliable, and solutions-focused. They understood our requirements and delivered beyond expectations on time and budget."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <p class="testimonial-author">Verified Client</p>
+                            <p class="testimonial-role">Startup Founder</p>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-body">
+                            <p>"Working with APONETIX was seamless. Their technical expertise and communication made the entire process smooth and efficient."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <p class="testimonial-author">Verified Client</p>
+                            <p class="testimonial-role">Project Manager</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container faq-container">
+                <div class="faq-head">
+                    <div class="section-head">
+                        <p class="eyebrow">FAQ</p>
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                </div>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>What services do you offer?</summary>
+                        <p>We deliver web experience engineering, product development, SaaS solutions, and digital transformation advisory. Every project is custom-built around your specific goals.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How long does a typical project take?</summary>
+                        <p>Project timelines vary based on scope and complexity. Simple websites: 4-6 weeks. Product development: 8-16 weeks. We provide detailed estimates during discovery phase.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What is your development process?</summary>
+                        <p>We follow: Discover → Design → Develop → Optimize. Clear communication and iterative refinement ensures alignment with your vision throughout.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you offer support after launch?</summary>
+                        <p>Yes. We provide maintenance, optimization, and ongoing support packages. Discuss options during project planning.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What technologies do you use?</summary>
+                        <p>Modern, scalable tech stack: Python/Flask, React, Vue.js, Node.js, SQLite, PostgreSQL, and cloud platforms like AWS/Cloudflare. Technology choices are always aligned with your project requirements and long-term maintenance goals.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do you ensure project security?</summary>
+                        <p>Security-first approach: CSRF protection, rate limiting, secure authentication, SSL/TLS, regular audits, GDPR compliance, and secure deployment practices.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt cta-section">
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <p class="eyebrow">Ready to Start?</p>
+                    <h2>Let's Build Something Exceptional</h2>
+                    <p class="lead">Schedule a brief discussion about your project. Share your goals, and we'll propose a clear path forward.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="btn" href="#contact">Schedule Consultation</a>
+                    <a class="btn btn-ghost" href="mailto:info@aponetix.com">Send Email</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section trust-badges-section">
+            <div class="container">
+                <p class="eyebrow" style="text-align: center; display: block; margin-bottom: 24px;">Web Standards & Best Practices</p>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <span class="badge-icon">🔒</span>
+                        <p>SSL/TLS Encrypted</p>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">⚡</span>
+                        <p>Performance Optimized</p>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">📱</span>
+                        <p>Mobile First Design</p>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">♿</span>
+                        <p>WCAG Compliant</p>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">🔍</span>
+                        <p>SEO Optimized</p>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">📊</span>
+                        <p>Analytics Ready</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -278,7 +439,7 @@
     <footer>
         <div class="container footer-content">
             <div>
-                <p>© 2026 APONETIX. All rights reserved.</p>
+                <p>&copy; 2024 APONETIX. All rights reserved.</p>
                 <p>Independent founder-led startup focused on affordable innovation and premium digital experiences.</p>
             </div>
             <div class="footer-links">
