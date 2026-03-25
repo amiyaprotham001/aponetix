@@ -11,8 +11,13 @@
     <header class="navbar">
         <div class="container nav-content">
             <a class="brand" href="{{ url_for('home') }}">
-                <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="APONETIX Logo" />
-                <span>APONETIX</span>
+                <span class="brand-logo-wrap" aria-hidden="true">
+                    <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="" width="40" height="40" decoding="async" />
+                </span>
+                <span class="brand-text">
+                    <strong>APONETIX</strong>
+                    <small>Affordable Innovation, Premium Experience</small>
+                </span>
             </a>
             <nav aria-label="Primary">
                 <a href="{{ url_for('home') }}">Home</a>

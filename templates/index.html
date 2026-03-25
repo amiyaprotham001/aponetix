@@ -29,8 +29,13 @@
     <header class="navbar">
         <div class="container nav-content">
             <a class="brand" href="#top" aria-label="APONETIX Home">
-                <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="APONETIX logo" />
-                <span>APONETIX</span>
+                <span class="brand-logo-wrap" aria-hidden="true">
+                    <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="" width="40" height="40" decoding="async" />
+                </span>
+                <span class="brand-text">
+                    <strong>APONETIX</strong>
+                    <small>Affordable Innovation, Premium Experience</small>
+                </span>
             </a>
             <nav aria-label="Primary">
                 <a href="#services">Services</a>
@@ -62,6 +67,9 @@
                 </div>
 
                 <aside class="card hero-panel">
+                    <div class="brand-seal" aria-hidden="true">
+                        <img src="{{ url_for('static', filename='images/aponetix-logo.png') }}" alt="" width="72" height="72" decoding="async" />
+                    </div>
                     <h2>APONETIX at a Glance</h2>
                     <ul>
                         <li><strong>Company Type:</strong> Technology & Product Engineering</li>
